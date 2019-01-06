@@ -39,9 +39,10 @@ class Wrapper:
 
     def observation_spec(self):
         return self.env.observation_spec()
-
+    
+    @property
     def action_spec(self):
-        return self.env.action_spec()
+        return self.env.action_spec
 
     @property
     def dof(self):
